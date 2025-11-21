@@ -1,0 +1,92 @@
+.stock-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.dark-mode .stock-card {
+  background: rgba(30, 30, 46, 0.9);
+}
+
+.stock-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.stock-symbol {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.dark-mode .stock-symbol {
+  color: #fff;
+}
+
+.stock-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.dark-mode .stock-name {
+  color: #aaa;
+}
+
+.stock-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock-badge.positive {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.stock-badge.negative {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.stock-price {
+  margin-bottom: 12px;
+}
+
+.price-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.dark-mode .price-value {
+  color: #fff;
+}
+
+.stock-change {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stock-change.positive {
+  color: #10b981;
+}
+
+.stock-change.negative {
+  color: #ef4444;
+}

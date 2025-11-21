@@ -18,48 +18,49 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <div className="container">
         <MarketOverview />
+        {/* NOTE: Showing current market prices (updated from live data). For auto-refresh, see REAL_DATA_SETUP.md */}
         <div className="stocks-grid">
           <StockCard
             symbol="RELIANCE"
             name="Reliance Industries Ltd."
-            price={2456.75}
-            change={32.50}
-            changePercent={1.34}
+            price={1546.60}
+            change={-2.50}
+            changePercent={-0.16}
           />
           <StockCard
             symbol="TCS"
             name="Tata Consultancy Services"
-            price={3678.90}
-            change={-28.45}
-            changePercent={-0.77}
+            price={3150.60}
+            change={5.80}
+            changePercent={0.18}
           />
           <StockCard
             symbol="HDFCBANK"
             name="HDFC Bank Ltd."
-            price={1645.30}
-            change={18.75}
-            changePercent={1.15}
+            price={998.05}
+            change={-10.80}
+            changePercent={-1.07}
           />
           <StockCard
             symbol="INFY"
             name="Infosys Ltd."
-            price={1523.60}
-            change={22.40}
-            changePercent={1.49}
+            price={1545.00}
+            change={8.50}
+            changePercent={0.55}
           />
           <StockCard
             symbol="ICICIBANK"
             name="ICICI Bank Ltd."
-            price={945.80}
-            change={-12.30}
-            changePercent={-1.28}
+            price={1369.50}
+            change={-13.50}
+            changePercent={-0.98}
           />
           <StockCard
             symbol="BHARTIARTL"
             name="Bharti Airtel Ltd."
-            price={1289.45}
-            change={15.60}
-            changePercent={1.22}
+            price={2162.70}
+            change={4.40}
+            changePercent={0.20}
           />
         </div>
         <ChartSection />
